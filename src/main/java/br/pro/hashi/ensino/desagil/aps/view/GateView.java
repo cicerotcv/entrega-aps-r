@@ -73,6 +73,7 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
     }
 
     private boolean clickInsideCircle(int x, int y) {
+
         return Math.pow(x - 130, 2) + Math.pow(y - 50, 2) <= Math.pow(10, 2);
     }
 
@@ -83,7 +84,9 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
         int x = event.getX();
         int y = event.getY();
 
-        System.out.println("line 108 [debug purpose]: (x,y): (" + x + "," + y + ")");
+        System.out.println("line 87 [debug purpose]: (x,y): (" + x + "," + y + ")");
+        System.out.println("line 88 [debug purpose]: inside circle: " + clickInsideCircle(x,y));
+
 
         // Se o clique foi dentro do circulo colorido/preto...
         if (clickInsideCircle(x, y)) {
