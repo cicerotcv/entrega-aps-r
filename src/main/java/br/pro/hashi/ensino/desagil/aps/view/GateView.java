@@ -85,7 +85,7 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
         int y = event.getY();
 
         System.out.println("line 87 [debug purpose]: (x,y): (" + x + "," + y + ")");
-        System.out.println("line 88 [debug purpose]: inside circle: " + clickInsideCircle(x,y));
+        System.out.println("line 88 [debug purpose]: inside circle: " + clickInsideCircle(x, y));
 
 
         // Se o clique foi dentro do circulo colorido/preto...
